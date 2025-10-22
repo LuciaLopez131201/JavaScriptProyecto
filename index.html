@@ -1,16 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda de Maquillaje Nerea</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Primera entrega</h1>
-    <p>Reproductor musical</p>
-    
+  <header>
+    <h1>💋 Nerea - Tienda de Maquillaje</h1>
+    <nav>
+      <button id="ver-carrito">🛒 Ver Carrito (<span id="cantidad-carrito">0</span>)</button>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Productos Destacados</h2>
+    <div class="contenedor-productos" id="lista-productos">
+      <!-- Los productos se insertan desde JavaScript -->
+    </div>
+  </main>
+
+  <section id="carrito" class="oculto">
+    <h2>🛍️ Tu Carrito</h2>
+    <div id="carrito-items"></div>
+    <p class="total">Total: $<span id="total">0.00</span></p>
+    <button id="vaciar-carrito">Vaciar Carrito</button>
+    <button id="cerrar-carrito">Cerrar</button>
+  </section>
+
+  <footer>
+    <p>© 2025 Nerea - Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
